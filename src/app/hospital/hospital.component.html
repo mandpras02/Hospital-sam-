@@ -1,0 +1,121 @@
+<header>
+    <h1>Hospital Administration</h1>
+</header>
+
+ <div mat-dialog-content class="content" style="margin-left: 150px;margin-top: 20px;" >
+    <div class="example-container" style="display: flex;">
+        <div class="text">
+            <mat-form-field  appearance="outline">
+            <mat-label>Hospital Name</mat-label>
+            <input matInput  placeholder="Ex. AIIMS">
+             <!-- <mat-hint align="end">{{input.value.length}}/10</mat-hint>  -->
+ </mat-form-field>
+        </div>
+        <div class="dropdown" style="margin-left: 90px;">
+            <mat-form-field appearance="outline">
+                <mat-label>Status</mat-label>
+                <mat-select>
+                  <mat-option value="option">Active</mat-option>
+                  <mat-option value="option">InActive</mat-option>
+                  <mat-option value="option">All</mat-option>
+                </mat-select>    
+ <!-- <mat-hint align="end">Here's the dropdown arrow ^</mat-hint> -->
+       </mat-form-field>
+      </div>
+</div> 
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Article Name</th>
+              <th scope="col">Author</th>
+              <th scope="col">Shares</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Bootstrap 4 CDN and Starter Template</td>
+              <td>Cristina</td>
+              <td>2.846</td>
+              <td>
+                <button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+              <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Bootstrap Grid 4 Tutorial and Examples</td>
+              <td>Cristina</td>
+              <td>3.417</td>
+              <td>
+                <button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+              <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Bootstrap Flexbox Tutorial and Examples</td>
+              <td>Cristina</td>
+              <td>1.234</td>
+              <td>
+                <button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
+                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+              <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div> 
+<!-- <body>
+
+    <h2>HTML Table</h2>
+    
+    <table class="table table-responsive-sm">
+        
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table>
+    
+    </body> -->

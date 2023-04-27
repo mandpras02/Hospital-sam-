@@ -1,0 +1,99 @@
+<head>
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   </head>
+ 
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+ <div class="container my-5">
+     <h1 class="mb-3" style="text-decoration: solid;">Register</h1>
+  
+     <div class="row"  style="display: flex;">
+
+       <div class="col-sm-6" >
+         <form #form="ngForm" (ngSubmit)="registerUser()" style="display:block ;">
+          <label for="name" class="form-label">Name</label>
+           <div class="col-6" >
+            
+             <input type="text" class="form-control" id="nam" name="name" [(ngModel)]="registerRequest.Name">
+           </div>
+           <div class="col-6">
+            <label for="emailId" class="form-label">Email Id</label>
+            <input type="email" class="form-control" id="email" name="emailId" [(ngModel)]="registerRequest.EmailId">
+          </div>
+          <div class="col-6">
+            <label for="number" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="num" name="number" [(ngModel)]="registerRequest.PhoneNumber">
+          </div>
+          <div class="col-6">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="user" name="username" [(ngModel)]="registerRequest.Username">
+          </div>  
+          <div class="col-6">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="stat" name="status" [(ngModel)]="registerRequest.Password">
+          </div>  
+          
+             <div class="col-6">
+               <label for="hid" class="form-label">HospitalId</label>
+               <input type="text" class="form-control" id="hospid" name="hid" [(ngModel)]="registerRequest.HospitalId">
+             </div>
+             <div class="col-6">
+               <label for="did" class="form-label">DepartmentId</label>
+               <input type="text" class="form-control" id="depid" name="did" [(ngModel)]="registerRequest.DepartmentId">
+             </div>        
+             <div class="col-6">
+               <label for="role" class="form-label">Role</label>
+               <input type="text" class="form-control" id="rol" name="role" [(ngModel)]="registerRequest.Role">
+             </div>
+                     
+             
+   
+           <br> 
+           <!-- <div class="col-6">
+             <label for="status" class="form-label">Status</label>
+             <select class="form-select" aria-label="Default select example">
+               <input type="text" class="form-control" id="name" name="status" [(ngModel)]="registerRequest.Status">
+               <option selected >--select--</option>
+               
+               <option value="2">InActive</option>
+             </select>            
+             
+           </div> -->
+            <br>
+           <button type="submit" class="btn btn-primary">Register</button>
+   
+         </form>
+       </div>
+       <img src="https://drmehedi.com/wp-content/uploads/2022/04/image-6-1040x585.png" height="500px" width="500px">
+
+     </div> 
+ 
+   </div>
+
+   <!-- <mat-card>
+      <mat-card-content>
+         <h1>Registration</h1>
+         <form class="example-form"[formGroup]="registerform" (ngSubmit)="proceedRegistration">
+            <mat-form-field class="example-full-width">
+              <mat-label>Favorite food</mat-label>
+              <input matInput placeholder="Ex. Pizza" value="Sushi">
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+              <mat-label>Leave a comment</mat-label>
+              <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+            </mat-form-field>
+          </form>
+
+      </mat-card-content>
+    </mat-card>
+ 
+
+     -->

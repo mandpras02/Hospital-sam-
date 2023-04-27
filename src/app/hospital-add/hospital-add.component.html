@@ -1,0 +1,28 @@
+<!-- <p>hospital-add works!</p> -->
+<div mat-dialog-title >
+    <h1>
+        Add New Hospital
+    </h1>
+</div>
+<div mat-dialog-content class="content">
+    <div class="example-container">
+        <mat-form-field hintLabel="enter hospital name" appearance="outline">
+          <mat-label>Hospital Name</mat-label>
+          <input matInput  placeholder="Ex. AIIMS">
+          <!-- <mat-hint align="end">{{input.value.length}}/10</mat-hint> -->
+        </mat-form-field>
+      
+        <mat-form-field appearance="outline">
+          <mat-label>Status</mat-label>
+          <mat-select>
+            <mat-option value="option">Active</mat-option>
+            <mat-option value="option">InActive</mat-option>
+          </mat-select>
+          <!-- <mat-hint align="end">Here's the dropdown arrow ^</mat-hint> -->
+        </mat-form-field>
+      </div>
+</div>
+<div mat-dialog-action style="padding: 0px 25px 20px ;">
+    <button mat-raised-button style="padding: 14px 100px;" >Cancel</button>
+    <button mat-raised-button style="background-color: rgb(90, 132, 231);padding: 14px 100px;">Save</button>
+</div>

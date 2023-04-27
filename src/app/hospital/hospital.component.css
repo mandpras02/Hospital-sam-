@@ -1,0 +1,15 @@
+.dropdown{
+    margin-left: 20px;
+}
+header h1{
+   
+        font-size: 30px;
+        font-weight: 550;
+       margin-top: 30px;
+        background-image: conic-gradient( #526ac9, #242daa);
+        color: transparent;
+         background-clip: text;
+        -webkit-background-clip: text; 
+        display: inline;
+      
+}

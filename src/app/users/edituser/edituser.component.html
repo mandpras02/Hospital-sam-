@@ -1,0 +1,138 @@
+<head>
+     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">   
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+     </head>
+    
+  
+    
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  
+    
+  <div class="container my-5">
+    
+   <h1 class="mb-3" style="text-decoration: solid;">Edit User</h1>
+   
+    
+<div class="row" >
+    
+    <div class="col-sm-6">
+    
+  <form #form="ngForm" style="display:block ;" (ngSubmit)="onSave()">
+    
+ <!-- <div class="col-6">
+    
+  <label for="id" class="form-label">UserId</label>
+    
+    <input type="text" class="form-control" id="Id" name="id" [(ngModel)]="userdata.userId" readonly>
+    
+    </div> -->
+    
+
+        <div class="col-6">
+            <label for="ar" class="form-label">Name</label>
+           <input type="text" class="form-control" id="nam" name="ar" [(ngModel)]="userdata.name">
+           </div>
+           <div class="col-6">
+            <label for="emailid" class="form-label">EmailId</label>
+           <input type="email" class="form-control" id="email" name="emailid" [(ngModel)]="userdata.emailId">
+           </div>
+           <div class="col-6">
+            <label for="number" class="form-label">Phone Number</label>
+           <input type="text" class="form-control" id="num" name="number" [(ngModel)]="userdata.phoneNumber">
+           </div>
+   <div class="col-6">
+    <label for="createdon" class="form-label">CreatedOn</label>
+    <input type="datetime-local" class="form-control" id="On" name="createdon" [(ngModel)]="userdata.createdOn">
+  </div>
+   <div class="col-6">
+     <label for="approvedby" class="form-label">ApprovedBy</label>
+    <input type="text" class="form-control" id="appby" name="approvedby" [(ngModel)]="userdata.approvedBy">
+    </div>
+    <div class="col-6">
+     <label for="aron" class="form-label">ApprovedOn</label>
+    <input type="datetime-local" class="form-control" id="apreon" name="aron" [(ngModel)]="userdata.approvedOn">
+    </div>
+    <div class="col-6">
+     <label for="username" class="form-label">Username</label>
+    <input type="text" class="form-control" id="usname" name="username" [(ngModel)]="userdata.username">
+    </div>
+    <div class="col-6">
+    <label for="password" class="form-label">Password</label>
+    <input type="text" class="form-control" id="pswd" name="password" [(ngModel)]="userdata.password">
+     </div>
+     <div class="col-6">
+    <label for="status" class="form-label">Status</label>
+    <input type="text" class="form-control" id="stat" name="status" [(ngModel)]="userdata.status">
+</div>
+   <div class="col-6">
+<label for="hid" class="form-label">HospitalId</label>
+    
+ <input type="text" class="form-control" id="hospid" name="hid" [(ngModel)]="userdata.hospitalId">
+    
+ </div>
+    
+    <div class="col-6">
+    
+ <label for="did" class="form-label">DepartmentId</label>
+    
+<input type="text" class="form-control" id="depid" name="did" [(ngModel)]="userdata.departmentId">
+    
+ </div>
+    
+<div class="col-6">
+    
+     <label for="role" class="form-label">Role</label>
+    
+  <input type="text" class="form-control" id="rol" name="role" [(ngModel)]="userdata.role">
+    
+  </div>
+    
+
+    
+    <br>
+    
+    <!-- <div class="col-6">
+    
+                  <label for="status" class="form-label">Status</label>
+    
+                  <select class="form-select" aria-label="Default select example">
+    
+                    <input type="text" class="form-control" id="name" name="status" [(ngModel)]="addProductRequest.Status">
+    
+                    <option selected >--select--</option>
+    
+                    <option value="1">Active</option>
+    
+                    <option value="2">InActive</option>
+    
+                  </select>            
+    
+                 
+    
+                </div> -->
+    
+   <br>
+    
+   <button type="submit" class="btn btn-primary">Save</button>
+    
+<a class="btn btn-danger" style="margin-left:20px ;" (click)="deletePost()">Delete</a>
+    
+</form>
+    
+</div>
+ </div>     
+ </div>

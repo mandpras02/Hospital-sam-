@@ -1,0 +1,53 @@
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<div class="container my-5">
+    <h1 class="mb-3">Edit Product</h1>
+ 
+    <div class="row" >
+      <div class="col-sm-6">
+        <form #form="ngForm" (ngSubmit)="onSave()">
+          <div class="col-6">
+            <label for="id" class="form-label">ProductId</label>
+            <input type="text" class="form-control" id="Id" name="id" [(ngModel)]="userdata.productId" readonly>
+          </div>
+          <div class="col-6">
+            <label for="name" class="form-label">ProductName</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="userdata.productName">
+          </div>
+          <div class="col-6">
+            <label for="quantity" class="form-label">QuantityLimit</label>
+            <input type="text" class="form-control" id="quant" name="quantity" [(ngModel)]="userdata.quantityLimit">
+          </div>
+          <div class="col-6">
+            <label for="PCS" class="form-label">NumberOfPCS</label>
+            <input type="text" class="form-control" id="PCS" name="PCS" [(ngModel)]="userdata.numberOfPcs">
+          </div>
+          <div class="col-6">
+            <label for="full" class="form-label">FulfilledBy</label>
+            <input type="text" class="form-control" id="by" name="full" [(ngModel)]="userdata.fulfilledBy">
+          </div>
+          <div class="col-6">
+            <label for="status" class="form-label">Status</label>
+            <input type="text" class="form-control" id="name" name="status" [(ngModel)]="userdata.status">
+          </div>
+  
+          <button type="submit" class="btn btn-primary">Save</button>
+          <a class="btn btn-danger" style="margin-left:20px ;" (click)="deletePost()">Delete</a>
+          
+        </form>
+      </div>
+    </div>  
+  </div>
+
